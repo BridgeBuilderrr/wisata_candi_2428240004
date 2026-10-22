@@ -67,9 +67,43 @@ class  _ProfileScreenState extends State<ProfileScreen> {
                   SizedBox(
                     width: MediaQuery.of(context).size.width / 3,
                     child: const Row(children: [
+                      Icon(Icons.favorite, color: Colors.red),
+                      SizedBox(width: 8),
+                      Text('Favorit', style: TextStyle(
+                        fontSize: 18, fontWeight: FontWeight.bold)),
+                    ]),
+                  ),
+                  Expanded(
+                    child: Text(': $userName',
+                      style: const TextStyle(fontSize: 18)),
+                  ),
+                ]
+              ),
+              Row(
+                children: [
+                  SizedBox(
+                    width: MediaQuery.of(context).size.width / 3,
+                    child: const Row(children: [
+                      Icon(Icons.person, color: Colors.blue),
+                      SizedBox(width: 8),
+                      Text('user', style: TextStyle(
+                        fontSize: 18, fontWeight: FontWeight.bold)),
+                    ]),
+                  ),
+                  Expanded(
+                    child: Text(': $userName',
+                      style: const TextStyle(fontSize: 18)),
+                  ),
+                ]
+              ),
+              Row(
+                children: [
+                  SizedBox(
+                    width: MediaQuery.of(context).size.width / 3,
+                    child: const Row(children: [
                       Icon(Icons.lock, color: Colors.amber),
                       SizedBox(width: 8),
-                      Text('Pengguna', style: TextStyle(
+                      Text('kunci', style: TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold)),
                     ]),
                   ),
